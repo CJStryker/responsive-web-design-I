@@ -328,6 +328,11 @@ button {
         font-weight: bold;
     }
 
+    nav a {
+        border-bottom: 1px solid black;
+        border-width: 100%;
+    }
+
     .logo {
         display: none;
     }
