@@ -83,6 +83,13 @@ h1 {
     margin: 0 auto;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
 .margins {
     width: 48px;
     height: 290px;
@@ -304,12 +311,22 @@ button {
         margin: 0 auto;
     }
 
+    .nav-container {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
     .margins {
         display: none;
     }
 
     nav {
         max-width: 100%;
+        width: 100%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -320,6 +337,7 @@ button {
     a {
         padding: 25px 75px 25px 0px;
         color: #999;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -329,12 +347,8 @@ button {
     }
 
     nav a {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid lightgray;
         border-width: 100%;
-    }
-
-    .logo {
-        display: none;
     }
 
     p {
